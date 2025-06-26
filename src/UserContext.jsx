@@ -14,7 +14,6 @@ export const UserProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      console.log("User state changed:", user);
       navigate("/");
     }
   }, [user]);
