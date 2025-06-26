@@ -1,10 +1,17 @@
 import { useState } from "react";
 import Box from "@mui/material/Box";
-import { Button, Stack, TextField, InputAdornment } from "@mui/material";
+import {
+  Button,
+  Stack,
+  TextField,
+  InputAdornment,
+  Typography,
+} from "@mui/material";
 import KeyIcon from "@mui/icons-material/Key";
 import LoginIcon from "@mui/icons-material/Login";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { useUser } from "../UserContext";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { login } = useUser();
@@ -59,6 +66,9 @@ const Login = () => {
             }}
             onChange={handleChanege}
           ></TextField>
+          <Typography variant="body2" color="text.secondary">
+            Don't have an accaount? <Link to="/register">Register</Link>
+          </Typography>
           <Button
             variant="contained"
             color="secondary"
