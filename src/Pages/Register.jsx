@@ -91,6 +91,9 @@ const Register = () => {
             }}
             onChange={handleChanege}
           />
+          <Typography variant="body2" color="text.secondary">
+            Already have an accaount? <Link to="/login">Login</Link>
+          </Typography>
           <Button
             variant="contained"
             color="secondary"
